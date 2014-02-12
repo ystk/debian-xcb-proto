@@ -2,15 +2,22 @@ Source: xcb-proto
 Section: libdevel
 Priority: optional
 Maintainer: XCB Developers <xcb@lists.freedesktop.org>
-Uploaders: Jamey Sharp <sharpone@debian.org>, Josh Triplett <josh@freedesktop.org>, Julien Danjou <acid@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), libxml2-utils, python-support, automake
-Standards-Version: 3.8.3
+Uploaders: Julien Danjou <acid@debian.org>, Cyril Brulebois <kibi@debian.org>
+Build-Depends:
+ debhelper (>= 7.0.50~),
+ dh-autoreconf,
+ libxml2-utils,
+ python-all (>= 2.6.6-3~),
+ automake
+Standards-Version: 3.9.3
+X-Python-Version: >= 2.5
 Homepage: http://xcb.freedesktop.org
-XS-Vcs-Git: git://anongit.freedesktop.org/git/xcb/proto
-XS-Vcs-Browser: http://gitweb.freedesktop.org/?p=xcb/proto.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/xcb-proto.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xcb-proto.git
 
 Package: xcb-proto
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: X C Binding - protocol descriptions
  xcb-proto contains descriptions of the X Window System core protocol and
@@ -33,6 +40,7 @@ Description: X C Binding - protocol descriptions
 Package: python-xcbgen
 Section: python
 Architecture: all
+Multi-Arch: foreign
 Depends: ${python:Depends}, ${misc:Depends}
 Description: X C Binding - protocol binding generator
  python-xcbgen generates the X protocol C language bindings from XML

@@ -1,3 +1,41 @@
+xcb-proto (1.7.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump standard version
+  * Use source format 3.0
+
+ -- Julien Danjou <acid@debian.org>  Fri, 23 Mar 2012 23:44:43 +0100
+
+xcb-proto (1.7-1) unstable; urgency=low
+
+  [ Arnaud Fontaine ]
+  * Switch from deprecated python-support to dh_python2.
+  * Revert source format change.
+
+  [ Christopher James Halse Rogers ]
+  * Point VCS-Git at the correct repositories, and drop unnecessary XS- prefix.
+
+  [ Timo Aaltonen ]
+  * New upstream release.
+
+  [ Cyril Brulebois ]
+  * Add myself to Uploaders.
+  * Bump Standards-Version to 3.9.2 (no changes needed).
+
+ -- Arnaud Fontaine <arnau@debian.org>  Wed, 25 Jan 2012 14:26:55 +0900
+
+xcb-proto (1.6-3) unstable; urgency=low
+
+  * Remove Jamey Sharp and Josh Triplett from the Uploaders list
+    (closes: #568275).
+  * Make the packages Multi-Arch: foreign.
+  * Add single-debian-patch to debian/source/options because they broke
+    dpkg-source (again).
+  * Use dh-autoreconf instead of manual autoreconf so we clean things up
+    properly.
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 12 Nov 2011 01:20:40 +0100
+
 xcb-proto (1.6-2) unstable; urgency=low
 
   * Drop cdbs in favor of dh 7 (Closes: #564351)
@@ -69,7 +107,7 @@ xcb-proto (1.0-1) experimental; urgency=low
 xcb-proto (0.9.92-1) experimental; urgency=low
 
   * New upstream release.
-  
+
   [ Josh Triplett ]
   * No longer installs files to /usr/include/X11, so remove Pre-Depends on
     x11-common.
@@ -128,4 +166,3 @@ fd.o-xcb-proto (0.8-1) unstable; urgency=low
   * Initial Release.
 
  -- Jamey Sharp <sharpone@debian.org>  Thu, 18 Mar 2004 00:09:03 -0800
-
