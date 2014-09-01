@@ -1,3 +1,21 @@
+xcb-proto (1.10-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Michele Cane ]
+  * Bump Standard-version to 3.9.4.
+
+  [ Julien Cristau ]
+  * Revert to source format 1.0.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 22 Dec 2013 18:26:02 +0100
+
+xcb-proto (1.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 09 Jun 2013 19:32:00 +0200
+
 xcb-proto (1.7.1-1) unstable; urgency=low
 
   * New upstream release.
